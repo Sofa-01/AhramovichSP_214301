@@ -1,0 +1,242 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+	<title> Создание маршрута </title>
+	<link rel="stylesheet" href="{% static 'css/stylecreate.css' %}">
+</head>
+<head>
+</head>
+<body>
+
+
+<header>
+<div class="nav" id="nav">
+	<div class="head">
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<a id="first">T&T</a>
+					</td>
+					
+					<td>
+						<a><b>СОЗДАНИЕ МАРШРУТА</b></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="text">
+		<a><b>Выберете город(несколько) из списка, <br>который хотели бы посетить</b></a>
+	</div>
+
+	<div class="form">
+		<input type="text" class="form_input" placeholder=" ">
+		<label class="form_label">Город</label>
+		<img src="{% static 'img/lupa.png' %}" width="2%">
+	</div>
+	
+	<div class="information">
+	<a>Брест - это город, административный центр Брестской области и<br>
+	Брестского района Беларуси. Город Брест занимает особое место<br>
+	среди культурно-исторического наследия Беларуси. В Бресте<br>
+	очень много достопримечательностей. Городу Бресту и его<br>
+	достопримечательностям посвящен не один отдельный сайт. Наш<br>
+	сайт создан для описания менее известных мест, он призван<br>
+	открыть читателям новые города и интересные<br>
+	достопримечательности, о которых они ранее, возможно, не знали.<br>
+	Брест, конечно же, не относится к таким местам, о нём все знают.<br>
+	Туристы его любят и активно посещают.</a>
+	</div>
+</div>
+	
+</header>
+	<center>
+	<div class="attractions">
+		<div class="text1">
+			<a><b>Достопримечательности: Брест</b></a>
+		</div>
+		
+		<div class="content">
+			<a><b>Брестская крепость</b></a>
+			<table>
+				<tbody>
+					<tr>
+						<td id="td1">
+						<center>
+							<img src="{% static 'img/krepost.png' %}" width="70%">
+						</center>
+						</td>
+						<td id="td2">
+							<a>    Брестская крепость первоначально была построена в<br>
+								1836-42 годах. Она была возведена в самом историческом<br>
+								центре города Бреста, и ради её строительства была снесена<br>
+								или перестроена вся историческая застройка города Бреста<br>
+								16-18 веков. Именно здесь был подписан «Брестский мир»,<br>
+								который ознаменовал выход России из Первой Мировой<br>
+								Войны. В межвоенный период крепость использовалась<br>
+								поляками как казарма, военный склад и политическая<br>
+								тюрьма.</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<center>
+							<button>Добавить в маршрут</button>
+						</center>
+						</td>
+						<td>
+						
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	
+	<div class="content">
+			<a><b>Церковь Святого Николая</b></a>
+			<table>
+				<tbody>
+					<tr>
+						<td id="td1">
+						<center>
+							<img src="{% static 'img/nicola.png' %}" width="70%">
+						</center>
+						</td>
+						<td id="td2">
+							<a>    Важной из достопримечательностей является церковь<br>
+								Святого Николая, построенная в 1906 году. Данную<br>
+								церковь еще называют «Братской», чтобы отличать от<br>
+								церкви Святого Николая, расположенной в крепости.</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<center>
+							<button>Добавить в маршрут</button>
+						</center>
+						</td>
+						<td>
+						
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	
+	<div class="content">
+			<a><b>Музей железнодорожной техники</b></a>
+			<table>
+				<tbody>
+					<tr>
+						<td id="td1">
+						<center>
+							<img src="{% static 'img/poezd.png' %}" width="70%">
+						</center>
+						</td>
+						<td id="td2">
+							<a>    В этом музее собрано очень много паровозов и другой<br>
+								железнодорожной техники. Очень положительной<br>
+								особенностью этого музея является то, что посетителям<br>
+								музея разрешен доступ внутрь всех экспонатов. Можно<br>
+								осматривать как кабину машиниста, так и моторный<br>
+								отсек большинства локомотивов. По ним также можно<br>
+								полазить и снаружи. Разрешено и неограниченно<br>
+								фотографироваться с экспонатами. Музей<br>
+								железнодорожной техники в Бресте это очень<br>
+								интересный и уникальный музей, в Беларуси ему нет<br>
+								аналогов.</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<center>
+							<button>Добавить в маршрут</button>
+						</center>
+						</td>
+						<td>
+						
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div class="text1">
+			<a><b style="margin-top:5%;">Мой маршрут</b></a>
+		</div>
+		
+		<div class="form1">
+		<div class="textform">
+		<b>
+			<a id="t2">Выбранные</a><br>
+			<a id="t3">достопримечательности</a></b>
+		</div>
+		
+		<div class="inform">
+			<div class="place">
+				<br>
+				<a id="t4">1. Брестская крепость</a><br>
+				<a id="t4">2. Церковь Святого Николая</a>
+			</div>
+			
+		</div>
+	</div>
+	
+			<div class="text1">
+				<a><b style="margin-top:5%;">Визуализация</b></a>
+			</div>
+		<div class="carta">
+			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af8601536f94c51b839539d1ddfb540b974a91ae4a920af36065b3ab7fbc0522a&amp;source=constructor" width="739" height="398" frameborder="0"></iframe>
+		</div>
+	</div>
+	</center>
+	
+	<table id="table">
+		<tbody>
+		<tr>
+			<td>
+			<a>Бронирование жилья</a>
+			</td>
+			<td>
+			<button id="hotel">Да</button>
+			</td>
+			<td>
+			<button id="b1">Нет</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<a>Бронирование транспорта</a>
+			</td>
+			<td>
+			<button id="trans">Да</button>
+			</td>
+			<td>
+			<button id="b1">Нет</button>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	<div class="knopka">
+		<button id="fav">Сохранить маршрут в избранные</button>
+	</div>
+	
+	<div class="link">
+		<a href="{% url 'favorite' %}">НАЗАД</a>
+	</div>
+	<hr>
+	<footer>
+	<div class="logo">
+		<a href="#nav">T&T</a>
+	</div>
+	</footer>
+
+<script src="{% static 'js/reserv.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+	<title> Зарегистрироваться </title>
+	<link rel="stylesheet" href="{% static 'css/stylesign.css' %}">
+</head>
+<head>
+</head>
+<body>
+
+
+<header>
+<div class="nav" id="nav">
+
+	<div class="head">
+		<table style="width:80%;">
+			<tbody>
+				<tr>
+					<td>
+						<a id="first">T&T</a>
+					</td>
+					
+					<td>
+						<a><b>Регистрация</b></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="dform">
+		<form method="post">
+    {% csrf_token %}
+			<div class="form">
+		<center>
+		<label class="form_label">Введите логин</label><br>
+		<input type="text"  class="form_input" placeholder=" " name="username">
+		</center>
+	</div>
+	
+	<div class="form">
+		<center>
+		<label class="form_label">Введите пароль</label><br>
+		<input type="password" class="form_input" placeholder=" " name="password">
+		</center>
+	</div>
+	<center>
+		<div class="buttons">
+		<button type="submit" id="Button">
+		<a>ЗАРЕГИСТРИРОВАТЬСЯ</a>
+		</button>
+			</div>
+	</center>
+		</form>
+	<footer>
+	<hr>
+	<div class="logo">
+		<a href="#nav">T&T</a>
+	</div>
+	</footer>
+
+</div>
+</header>
+
+c
+
+</body>
+</html>

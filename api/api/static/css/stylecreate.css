@@ -1,0 +1,269 @@
+* {
+	margin: 0;
+}
+html {
+	scroll-behavior:smooth;
+}
+
+header {
+	width:100%;
+	height:100vh;
+	display:flex;
+	justify-content: center;
+	background:url('/static/img/backheader.png') 0 0/110% no-repeat;
+}
+
+.head {
+	margin-top:1.5%;
+}
+.nav {
+	width:100%;
+}
+
+.head table {
+	width:88%;
+}
+
+.head b{
+	display:flex;
+	justify-content: center;
+}
+
+#first {
+	font-size:37px;
+	margin-left:20%;
+}
+
+.head a{
+	font-size:40px;
+	text-decoration:none;
+	color:black;
+}
+
+.text {
+	margin-top:3%;
+	display:flex;
+	justify-content: center;
+}
+
+.text a{
+	font-size:25px;
+	text-align:center;
+}
+
+
+.form {
+	display:flex;
+	justify-content: center;
+	margin-top:2%;
+	position:relative;
+	text-align:left;
+}
+
+.form_input {
+	background: rgba(170, 168, 173,0.4);
+	border-radius:20px;
+	font-size:16px;
+	padding:7px;
+	padding-left:10px;
+	border:0;
+}
+
+.form_label {
+	font-size:20px;
+	position:absolute;
+	z-index:-1;
+	padding:5px;
+	padding-right:9%;
+}
+.form_input:focus ~ .form_label,.form_input:not(:placeholder-shown) ~ .form_label {
+	display:none;
+}
+
+.form img{
+	position:absolute;
+	padding:5px;
+	z-index:-1;
+	padding-left:10%;
+}
+
+.information {
+	display:flex;
+	justify-content: center;
+	margin-top:5%;
+}
+
+.information a{
+	font-size:23px;
+}
+
+.text1 a{
+	font-size:30px;
+	text-decoration:none;
+	text-align:center;
+	display:flex;
+	justify-content: center;
+	margin-top:4%;
+}
+
+.content {
+	background: rgba(170, 168, 173,0.4);
+	margin-top:4%;
+	width:75%;
+	border-radius:20px;
+}
+
+.content b{
+	display:flex;
+	justify-content: center;
+	font-size:30px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+#td1 {
+	width:40%;
+}
+
+#td2 {
+	width:60%;
+}
+table img {
+	border-radius:30px;
+	padding:7px;
+}
+
+.content table button {
+	display:flex;
+	justify-content: center;
+	width:50%;
+	font-size:20px;
+	background: rgba(127, 128, 133);
+	color:white;
+	padding:5px;
+	text-align:center;
+	border-radius:20px;
+	border:none;
+	margin-top:3%;
+	margin-bottom:6%;
+}
+
+#td2 a{
+	font-size:22px;
+}
+
+table button:hover {
+	background: rgba(127, 128, 133,0.35);
+	transition: all 0.2s ease;
+	color: black;
+}
+
+#t2 {
+	font-size:25px;
+	text-decoration:overline #c8c7c9;
+}
+
+#t3 {
+	font-size:25px;
+	text-decoration:underline #c8c7c9;
+}
+ 
+.form1 {
+	width:35%;
+	background: rgba(170, 168, 173,0.4);
+	margin-top:4%;
+}
+
+#t4 {
+	font-size:17px;
+	color:red;
+	margin-left:3%;
+}
+
+.textform {
+	display:flex;
+	justify-content: center;
+	padding-top: 3%;
+}
+
+.place {
+	text-align: left;
+	padding-bottom: 4%;
+}
+
+.carta {
+	margin-top:2%;
+}
+
+#table {
+	margin-top:10%;
+	margin-left:10%;
+}
+
+#table tr td a{
+	font-size:35px;
+}
+
+#table button{
+	background: rgba(170, 168, 173,0.4);
+	margin-left:15px;
+	font-size:20px;
+}
+
+#b1 {
+	color:red;
+}
+
+#table button:hover {
+	background: rgba(127, 128, 133,0.35);
+	transition: all 0.2s ease;
+	color: white;
+	border:white;
+}
+
+.knopka {
+	display:flex;
+	justify-content: center;
+	margin-top:5%;
+}
+
+.knopka button{
+	font-size:30px;
+	padding:9px;
+}
+
+.link {
+	display:flex;
+	justify-content: center;
+}
+
+.link a{
+	font-size:20px;
+	text-decoration:none;
+	color:black;
+	margin-top:5%;
+	margin-bottom:3%;
+}
+
+footer {
+	width:100%;
+	margin-bottom:3%;
+	margin-top:3%;
+}
+
+footer a{
+	font-size:30px;
+	color:black;
+	text-decoration:underline overline #c8c7c9;
+}
+
+hr {
+	height:8px;
+	background:#a3a3a3;
+	border:none;
+}
+.logo {
+	width:100%;
+	display:flex;
+	justify-content: center;
+}

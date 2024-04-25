@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+	<title> Мой аккаунт </title>
+	<link rel="stylesheet" href="{% static 'css/stylefavorite.css' %}">
+</head>
+<head>
+</head>
+<body>
+
+
+<header>
+<div class="nav" id="nav">
+
+	<div class="head">
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<a id="first">T&T</a>
+					</td>
+					
+					<td>
+						<a><b>МОЙ АККАУНТ</b></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="menu">
+	<ul>
+		<li><a href="{% url 'personal' %}" target="_blanc">ЛИЧНЫЕ ДАННЫЕ</a></li>
+		<li><a href="{% url 'favorite' %}" style="color:red">ИЗБРАННЫЕ МАРШРУТЫ</a></li>
+		<li><a href="{% url 'hotelreserv' %}" target="_blanc">БРОНИРОВАНИЕ</a></li>
+		<li><a href="{% url 'create' %}" target="_blanc">СОЗДАТЬ МАРШРУТ</a></li>
+	</ul>
+	</div>
+	
+	<div class="text">
+		<a><b>ИЗБРАННЫЕ МАРШРУТЫ</b></a>
+	</div>
+	<center>
+	<div class="form">
+		<div class="text">
+			<a id="t1"><b>Брест</b></a>
+		</div>
+		
+		<div class="inform">
+		
+			<div class="place">
+				<a id="t2"><b>Места для посещения</b></a>
+				<a id="t3">Изменить?</a>
+				<br><br>
+				<a id="t4">Брестская крепость</a><br>
+				<a id="t4">Церковь Святого Николая</a>
+				<br><br><br><br>
+				<a id="t2"><b>Бронирование</b></a>
+				<a id="t3">Изменить?</a>
+				<br><br>
+				<a id="t4" style="color:red;">Без бронирования</a><br>
+				<br><br><br><br>
+				<a id="t2"><b>Транспорт</b></a>
+				<a id="t3">Изменить?</a>
+				<br><br>
+				<a id="t4" style="color:red;">Без бронирования</a><br>
+			</div>
+			
+		</div>
+		
+		<div class="text">
+		<b id="t5">
+			<a>Примерная стоимость маршрута:</a><br>
+			<a>0 р.</a>
+		</b>
+		</div>
+	</div>
+	</center>
+	
+	<div class="link">
+		<a href="{% url 'main' %}" target="_blanc">НА ГЛАВНУЮ</a>
+	</div>
+	<hr>
+	<footer>
+	<div class="logo">
+		<a href="#nav">T&T</a>
+	</div>
+	</footer>
+
+</div>
+</header>
+
+</body>
+</html>

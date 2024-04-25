@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+	<title> Бронирование </title>
+	<link rel="stylesheet" href="{% static 'css/styletransreserv.css' %}">
+</head>
+<head>
+</head>
+<body>
+
+
+<header>
+<div class="nav" id="nav">
+
+	<div class="head">
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<a id="first">T&T</a>
+					</td>
+					
+					<td>
+						<a><b>БРОНИРОВАНИЕ</b></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="menu">
+	<ul>
+		<li><a href="{% url 'hotelreserv' %}">ПРОЖИВАНИЕ</a></li>
+		<li><a href="{% url 'transreserv' %}" style="color:red">ТРАНСПОРТ</a></li>
+	</ul>
+	</div>
+	
+	<div class="text">
+		<a><b>Выберете город из списка, для которого<br>нужно найти жильё</b></a>
+	</div>
+
+	<div class="form">
+		<input type="text" class="form_input" placeholder=" ">
+		<label class="form_label">Город</label>
+		<img src="{% static 'img/lupa.png' %}" width="2%">
+	</div>
+		
+
+		<table class="table1">
+			<tbody>
+				<tr>
+					<td>
+						<li>
+						<div class="spisok">
+							<a>Тип транспорта</a>
+							<div class="down"></div>
+						</div>
+							<ul class="pad">
+								<li id="1"><a>Автобус</a></li>
+								<li><a>Маршрутка</a></li>
+								<li><a>Поезд</a></li>
+								<li><a>Автомобиль</a></li>
+							</ul>
+						</li>
+					</td>
+					<td>
+						<li>
+						<div class="spisok">
+							<a>Количество мест</a>
+						</div>
+						</li>
+					</td>
+					<td>
+						<li>
+							<div class="spisok">
+								<a>Город отправления</a>
+							</div>
+						</li>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<li>
+						<div class="spisok">
+							<a>Дата отправления</a>
+							<div class="down"></div>
+						</div>
+						<ul class="pad">
+								<li><a>08.04.24</a></li>
+								<li><a>09.04.24</a></li>
+								<li><a>10.04.24</a></li>
+								<li><a>11.04.24</a></li>
+								<li><a>12.04.24</a></li>
+							</ul>
+						</li>
+					</td>
+					<td>
+						<li>
+						<div class="spisok">
+							<a>Дата выезда</a>
+							<div class="down"></div>
+						</div>
+						<ul class="pad">
+								<li><a>14.04.24</a></li>
+								<li><a>15.04.24</a></li>
+								<li><a>16.04.24</a></li>
+								<li><a>17.04.24</a></li>
+								<li><a>18.04.24</a></li>
+							</ul>
+						</li>
+					</td>
+					<td>
+						<li>
+							<div class="spisok">
+								<a>Город прибытия</a>
+							</div>
+						</li>
+					</td>
+				</tr>	
+				<tr>
+					<td colspan="3">
+					<center>
+						<div class="spisok" id="search">
+							<a>НАЙТИ</a>
+						</div>
+					</center>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<div class="bform">
+		<center>
+		<div class="bilet">
+			<a><b>0951 AO-2</b></a>
+				<div class="time">
+					<div class="time1">
+						<a id="t1">14:30</a><br>
+						<a id="t2">Минск, ЖД Вокзал</a>
+					</div>
+					<div class="time2">
+						<a id="t1">16:30</a><br>
+						<a id="t2">Брест, Жд Брест-Центральный</a>
+					</div>
+				</div>
+				<div class="buttonplace">
+					
+						<div class="spisok" id="search1" style="margin-bottom:3%;">
+							<a>Выбрать место</a>
+						</div>
+					
+				</div>
+		</div>
+		<div class="bilet">
+			<a><b>0951 AO-2</b></a>
+				<div class="time">
+					<div class="time1">
+						<a id="t1">21:30</a><br>
+						<a id="t2">Минск, ЖД Вокзал</a>
+					</div>
+					<div class="time2">
+						<a id="t1">23:30</a><br>
+						<a id="t2">Брест, Жд Брест-Центральный</a>
+					</div>
+				</div>
+				<div class="buttonplace">
+					
+						<div class="spisok" id="search1" style="margin-bottom:3%;">
+							<a>Выбрать место</a>
+						</div>
+					
+				</div>
+		</div>
+		</center>
+		</div>
+		<div>
+	<div class="link">
+		<a href="{% url 'favorite' %}">НАЗАД</a>
+	</div>
+	<hr>
+	<footer>
+	<div class="logo">
+		<a href="#nav">T&T</a>
+	</div>
+	</footer>
+
+</div>
+</header>
+
+</body>
+</html>

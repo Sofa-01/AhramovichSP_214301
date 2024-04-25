@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+	<title> Войти </title>
+	<link rel="stylesheet" href="{% static 'css/stylesign.css' %}">
+</head>
+<head>
+</head>
+<body>
+
+
+<header>
+<div class="nav" id="nav">
+
+	<div class="head">
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<a id="first">T&T</a>
+					</td>
+					
+					<td>
+						<a><b>ВХОД В АККАУНТ</b></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="dform">
+	<form method="post">
+		{% csrf_token %}
+	<div class="form">
+		<center>
+		<label class="form_label">Введите логин</label><br>
+		<input type="text" id="username" name="username" class="form_input" placeholder=" ">
+		</center>
+		<center>
+		<label class="form_label">Введите пароль</label><br>
+		<input type="password" id="password" name="password" class="form_input" placeholder=" ">
+		</center>
+	</div>
+	<center>
+		<div class="buttons" type="submit">
+		<button id="Button" onclick="submitForm()">
+		<a>ВОЙТИ</a>
+		</button>
+	</center>
+	</form>
+	</div>
+	<footer>
+	<hr>
+	<div class="logo">
+		<a href="#nav">T&T</a>
+	</div>
+	</footer>
+
+</div>
+</header>
+
+<script src="{% static 'js/registrbutton.js' %}"></script>
+
+</body>
+</html>

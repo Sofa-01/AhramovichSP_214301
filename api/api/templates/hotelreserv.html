@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+	<title> Бронирование </title>
+	<link rel="stylesheet" href="{% static 'css/stylehotelreserv.css' %}"">
+</head>
+<head>
+</head>
+<body>
+
+
+<header>
+<div class="nav" id="nav">
+
+	<div class="head">
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<a id="first">T&T</a>
+					</td>
+					
+					<td>
+						<a><b>БРОНИРОВАНИЕ</b></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="menu">
+	<ul>
+		<li><a href="{% url 'hotelreserv' %}" style="color:red">ПРОЖИВАНИЕ</a></li>
+		<li><a href="{% url 'transreserv' %}">ТРАНСПОРТ</a></li>
+	</ul>
+	</div>
+	
+	<div class="text">
+		<a><b>Выберете город из списка, для которого<br>нужно найти жильё</b></a>
+	</div>
+
+	<div class="form">
+		<input type="text" class="form_input" placeholder=" ">
+		<label class="form_label">Город</label>
+		<img src="{% static 'img/lupa.png' %}" width="2%">
+	</div>
+		
+
+		<table class="table1">
+			<tbody>
+				<tr>
+					<td>
+						<li>
+						<div class="spisok">
+							<a>Количество звезд</a>
+							<div class="down"></div>
+						</div>
+							<ul class="pad">
+								<li id="1"><a>1 звезда</a></li>
+								<li><a>2 звезды</a></li>
+								<li><a>3 звезды</a></li>
+								<li><a>4 звезды</a></li>
+								<li><a>5 звезд</a></li>
+							</ul>
+						</li>
+					</td>
+					<td>
+						<li>
+						<div class="spisok">
+							<a>Количество человек</a>
+							<div class="down"></div>
+						</div>
+						<ul class="pad">
+								<li><a>1 человек</a></li>
+								<li><a>2 человека</a></li>
+								<li><a>3 человека</a></li>
+								<li><a>4 человека</a></li>
+								<li><a>5 человек</a></li>
+							</ul>
+						</li>
+					</td>
+					<td rowspan="2">
+						<div class="spisok" id="search">
+							<a>НАЙТИ</a>
+						</div>
+				</td>
+				</tr>
+				<tr>
+					<td>
+					<li>
+						<div class="spisok">
+							<a>Дата въезда</a>
+							<div class="down"></div>
+						</div>
+						<ul class="pad">
+								<li><a>08.04.24</a></li>
+								<li><a>09.04.24</a></li>
+								<li><a>10.04.24</a></li>
+								<li><a>11.04.24</a></li>
+								<li><a>12.04.24</a></li>
+							</ul>
+						</li>
+					</td>
+					<td>
+						<li>
+						<div class="spisok">
+							<a>Дата выезда</a>
+							<div class="down"></div>
+						</div>
+						<ul class="pad">
+								<li><a>14.04.24</a></li>
+								<li><a>15.04.24</a></li>
+								<li><a>16.04.24</a></li>
+								<li><a>17.04.24</a></li>
+								<li><a>18.04.24</a></li>
+							</ul>
+						</li>
+					</td>
+				</tr>				
+			</tbody>
+		</table>
+	<div class="appart">
+		<div class="hotel1">
+			<a>Hampton by Hilton Brest</a>
+			<a>&#9733;&#9733;&#9733;</a>
+			<img src="{% static 'img/hilton.png' %}" width="100%">
+			<b><a id="t1">Брест, Варшавское шоссе, 41</a></b>
+			<b><a id="t2" href="https://yandex.by/maps/org/hampton_by_hilton_brest/219845355727/?ll=23.708032%2C52.074395&z=16" target="_blanc">ПОДРОБНЕЕ НА ЯНДЕКС</a></b>
+			<center>
+			<button>ЗАБРОНИРОВАТЬ</button>
+			</center>
+		</div>
+	</div>
+
+	<div class="link">
+		<a href="{% url 'favorite' %}">НАЗАД</a>
+	</div>
+	<hr>
+	<footer>
+	<div class="logo">
+		<a href="#nav">T&T</a>
+	</div>
+	</footer>
+
+</div>
+</header>
+
+</body>
+</html>

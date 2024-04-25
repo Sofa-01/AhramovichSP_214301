@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+	<title> Мой аккаунт </title>
+	<link rel="stylesheet" href="{% static 'css/stylepersonal.css' %}">
+</head>
+<head>
+</head>
+<body>
+
+
+<header>
+<div class="nav" id="nav">
+
+	<div class="head">
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<a id="first">T&T</a>
+					</td>
+					
+					<td>
+						<a><b>МОЙ АККАУНТ</b></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="menu">
+	<ul>
+		<li><a href="{% url 'personal' %}" style="color:red">ЛИЧНЫЕ ДАННЫЕ</a></li>
+		<li><a href="{% url 'favorite' %}">ИЗБРАННЫЕ МАРШРУТЫ</a></li>
+		<li><a href="{% url 'hotelreserv' %}" target="_blanc">БРОНИРОВАНИЕ</a></li>
+		<li><a href="{% url 'create' %}" target="_blanc">СОЗДАТЬ МАРШРУТ</a></li>
+	</ul>
+	</div>
+	
+	<div class="text">
+		<a><b>ЛИЧНЫЕ ДАННЫЕ</b></a>
+	</div>
+	<center>
+		<table class="table">
+			<tbody>
+			<tr>
+				<td rowspan="5">
+					<div class="form">
+						<input type="text" class="form_input" id="input1" placeholder=" ">
+						<label class="form_label" id="label1"><a>&#9786;</a><br><b>Фото</b></label>
+					</div>
+				</td>
+				<td>
+					<div class="form">
+						<input type="text" class="form_input" placeholder=" ">
+						<label class="form_label">Фамилия</label>
+					</div>
+				</td>
+			<tr>
+			<tr>
+				<td>
+					<div class="form">
+						<input type="text" class="form_input" placeholder=" ">
+						<label class="form_label">Имя</label>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="form">
+						<input type="text" class="form_input" placeholder=" ">
+						<label class="form_label">Отчество</label>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="form">
+						<input type="text" class="form_input" placeholder=" ">
+						<label class="form_label">Почта</label>
+					</div>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</center>
+	
+	<div class="link">
+		<a href="{% url 'main' %}" target="_blanc">НА ГЛАВНУЮ</a>
+	</div>
+	<hr>
+	<footer>
+	<div class="logo">
+		<a href="#nav">T&T</a>
+	</div>
+	</footer>
+
+</div>
+</header>
+
+</body>
+</html>
